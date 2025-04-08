@@ -1,0 +1,77 @@
+{
+ "version": "auto-py-to-exe-configuration_v1",
+ "pyinstallerOptions": [
+  {
+   "optionDest": "noconfirm",
+   "value": true
+  },
+  {
+   "optionDest": "filenames",
+   "value": "C:/Users/rando/Downloads/Test/Internal_Form_Organizer.py"
+  },
+  {
+   "optionDest": "onefile",
+   "value": false
+  },
+  {
+   "optionDest": "console",
+   "value": false
+  },
+  {
+   "optionDest": "icon_file",
+   "value": "C:/Users/rando/Downloads/Tommrow.ico"
+  },
+  {
+   "optionDest": "clean_build",
+   "value": false
+  },
+  {
+   "optionDest": "strip",
+   "value": false
+  },
+  {
+   "optionDest": "noupx",
+   "value": false
+  },
+  {
+   "optionDest": "disable_windowed_traceback",
+   "value": false
+  },
+  {
+   "optionDest": "uac_admin",
+   "value": false
+  },
+  {
+   "optionDest": "uac_uiaccess",
+   "value": false
+  },
+  {
+   "optionDest": "argv_emulation",
+   "value": false
+  },
+  {
+   "optionDest": "bootloader_ignore_signals",
+   "value": false
+  },
+  {
+   "optionDest": "datas",
+   "value": "C:/Users/rando/Downloads/Test/Change_Form;Change_Form/"
+  },
+  {
+   "optionDest": "datas",
+   "value": "C:/Users/rando/Downloads/Test/environment;environment/"
+  },
+  {
+   "optionDest": "datas",
+   "value": "C:/Users/rando/Downloads/Test/Media_Data;Media_Data/"
+  },
+  {
+   "optionDest": "datas",
+   "value": "C:/Users/rando/Downloads/Test/VLCPortable;VLCPortable/"
+  }
+ ],
+ "nonPyinstallerOptions": {
+  "increaseRecursionLimit": true,
+  "manualArguments": "--collect-all pygame --collect-all PIL"
+ }
+}

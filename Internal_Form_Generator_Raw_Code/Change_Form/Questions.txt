@@ -1,0 +1,15 @@
+What is your name?<text>
+
+The_Merchant_of_Hell.png<media>
+            
+What is your email address?
+
+Testing_Sound_Sample.mp3<media>
+
+What is your age?<number>
+            
+Please describe your experience.<long>
+
+4_Bar_Linkage.mp4<media>
+
+Do you agree to the terms?<checkmark>
