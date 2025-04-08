@@ -129,42 +129,6 @@ Do you agree to the terms?<checkmark>"""
     def is_web_url(self, link):
         """Check if the link is a web URL (http/https)"""
         return link.lower().startswith(('http://', 'https://'))
-
-    def save_to_remote(self, data, remote_link):
-        """Attempt to save data to a remote location (either web URL or local path)"""
-        try:
-            if self.is_web_url(remote_link):
-                # Handle web URL
-                response = requests.post(remote_link, json=data)
-                if response.status_code == 200:
-                    return True, "Data saved remotely successfully!"
-                else:
-                    return False, f"Remote server returned status code {response.status_code}"
-            else:
-                # Handle local path
-                try:
-                    # Ensure directory exists
-                    os.makedirs(os.path.dirname(remote_link), exist_ok=True)
-                    
-                    # Prepare CSV data
-                    file_exists = os.path.isfile(remote_link)
-                    with open(remote_link, 'a', newline='') as csvfile:
-                        writer = csv.writer(csvfile)
-                        
-                        if not file_exists:
-                            header_questions = data['questions'].copy()
-                            header_questions.append("Timestamp")
-                            writer.writerow(header_questions)
-                        
-                        row = data['responses'].copy()
-                        row.append(data['timestamp'])
-                        writer.writerow(row)
-                    
-                    return True, f"Data saved to local path: {remote_link}"
-                except Exception as e:
-                    return False, f"Failed to save to local path: {str(e)}"
-        except Exception as e:
-            return False, f"Failed to save: {str(e)}"
     
     def load_questions(self):
         try:
