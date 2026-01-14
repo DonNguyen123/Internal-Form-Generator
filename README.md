@@ -42,5 +42,9 @@ After this is done, save the "Questions.txt". Then, if it is needed, change the 
 
 Note that from these images, you can fine some useful features. You may scroll up and down the form with the right scrollbar if nessiarly. If you need to scroll in the textbox, please just click the textbox, and use the up and down arrows in your keyboard. Note that the images will display directly in the form, while the sound and video (which can be activated by double clicking the blue links are underlined in red in the images above) will use a vlc player. This player is automaticlly attached to the code, meaning you do not need to downlaod anything. It will just work. Note, that when you submit the form, it will go by default in the "Change_Form" directory as "Responses.csv". Alterntively, if you actually did bother to change "Remote_Link.txt", it will save where the at the location you put in there.
 
+If you like this project, please see my other projects, or visit my website at: 
+https://widget-hub.com
+
+
 It should be stated for full clarity that the main purpose of this code is used for small applications, that generally offline. For example, you could use this as an internal form on a tablet that customers that enter or leave your store, can rate how well the services are. Or when people in get a line for a charity event, and you wish to to record who they are. Even a classroom exit would be doable in this case, or a small personal note app that you record your activites in. In general, however, if you need people to access a form online from far away, it is better to just use google forms. If you want bigger applications, please just use an SQL based database.
 
